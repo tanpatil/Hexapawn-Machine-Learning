@@ -1,4 +1,4 @@
-# py-hexapawn
+# Hexapawn-Machine Learning
 
 Hexapawn is a two-player board game invented by Martin Gardner. It is played on
 a 3x3 board with each player given 3 pawn pieces. To win a round a player must
