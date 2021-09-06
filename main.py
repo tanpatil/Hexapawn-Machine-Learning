@@ -33,29 +33,6 @@ for permutation in MoveSetConfigs:
 ConfigMoveSetVar=ConfigMoveSetVar.rstrip(',')
 ConfigMoveSet=tuple(eval(ConfigMoveSetVar))
 fh.close()
-
-fh=open("Scores.dat","rb+")
-WinLoose=pickle.load(fh)
-fh.close()
-
-def update(WinOrLoose):
-    f=open("Scores.dat","rb+")
-    f1=open("temp.dat","wb")
-    data=pickle.load(f)
-    if WinOrLoose=='Win':
-        newvar=data["Wins"]
-        data['Wins']=newvar+1
-        pickle.dump(data,f1)
-        f.close()
-        f1.close()
-    elif WinOrLoose=='Loose':
-        newvar=data["Losses"]
-        data['Losses']=newvar+1
-        pickle.dump(data,f1)
-        f.close()
-        f1.close()
-    os.remove("Scores.dat")
-    os.rename("temp.dat","Scores.dat")
  
 class Game:
     _initial_moves = InitialMoves
