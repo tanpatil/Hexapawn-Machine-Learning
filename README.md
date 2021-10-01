@@ -9,14 +9,10 @@ preventing them from performing a legal move.
 
 ## Running the Program
 
+  * Graphical mode is a modernized version of the game running in a GUI made with Tkinter
   * With either `./hexapawn.py` or `python3 hexapawn.py`
   * Runs usising **python3.1+**. Has no external module dependencies other than Tkinter which is typically bundled with Python 3 in most distributions.
 
-
-### Graphical Mode
-
-  * Graphical mode is a modernized version of the game running in a GUI made with Tkinter
-  * Can also be run directly by executing `./hexapawn-graphical.py`.
 
 
 ![](assets/screenshot-graphical.png)
